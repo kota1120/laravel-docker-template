@@ -12,11 +12,9 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/todo', 'TodoController@index');
 
-Route::get('/todo', function () {
-    echo 'Hello World!';
-});
+// Route::get('/todo', function () {
+//     echo 'Hello World!';
+// });
 
